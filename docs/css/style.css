@@ -1,0 +1,48 @@
+.oceanic-background {
+    background: linear-gradient(to bottom, #1a1a2e, #16213e, #0f3460);
+    color: #e94560;
+    font-family: 'Arial', sans-serif;
+    transition: background 0.5s;
+}
+
+a {
+    color: #e94560;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.liraen-reveal {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.oceanic-background:hover .liraen-reveal {
+    opacity: 1;
+}
+
+/* Add some immersive underwater styling */
+@keyframes bubble {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-20px); opacity: 0; }
+}
+
+.bubble { 
+    position: absolute; 
+    bottom: 0; 
+    width: 20px; 
+    height: 20px; 
+    background: rgba(255, 255, 255, 0.8); 
+    border-radius: 50%; 
+    animation: bubble 5s infinite;
+}
+
+/* Additional styles for immersive experience */
+.fish {
+    /* Example fish styles */
+    background: #e94560;
+    border-radius: 50%;
+    position: absolute;
+}
